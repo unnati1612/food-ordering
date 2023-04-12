@@ -7,7 +7,7 @@ const mongoDB=require("./db.js")
 mongoDB()
 // app.use(cors())
 app.use((req,res,next)=>{
-    res.setHeader("Access-Control-Allow-Origin","https://food-ordering-hnaofx5v4-unnati1612.vercel.app/")
+    res.setHeader("Access-Control-Allow-Origin","https://food-ordering-git-main-unnati1612.vercel.app")
     res.header(
         "Access-Control-Allow-Headers",
         "Origin,X-Requested-With,Content-Type,Accept")

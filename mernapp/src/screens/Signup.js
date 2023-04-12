@@ -14,7 +14,7 @@ export default function Signup() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('http://localhost:5000/api/createuser', formData)
+    axios.post('https://food-ordering-24hu.onrender.com/api/createuser', formData)
       .then(res => {
         console.log(res.data);
         navigate('/login')

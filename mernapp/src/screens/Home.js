@@ -10,7 +10,7 @@ export default function Home() {
   const [search,setSearch]=useState([])
 
   const loadData=async()=>{
-   let response= await fetch("http://localhost:5000/api/fooddata",{
+   let response= await fetch("https://food-ordering-24hu.onrender.com/api/fooddata",{
     method:'POST',
     headers:{
       'Content-Type':'application/json'

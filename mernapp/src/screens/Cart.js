@@ -22,7 +22,7 @@ export default function Cart() {
             email:userEmail,
             order_date:new Date().toDateString()
         }
-        axios.post('http://localhost:5000/api/orderData', orderdata)
+        axios.post('https://food-ordering-24hu.onrender.com/api/orderData', orderdata)
         .then(res => {
           console.log(res.data);
         if(res.status===200)

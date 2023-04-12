@@ -11,7 +11,7 @@ export default function Login() {
 let navigate=useNavigate()
   const handleSubmit = async(event) => {
     event.preventDefault();
-   const response= await axios.post('http://localhost:5000/api/loginuser', formData)
+   const response= await axios.post('https://food-ordering-24hu.onrender.com/api/loginuser', formData)
         console.log("valid credentials: "+response.data.authToken);
         localStorage.setItem("userEmail",formData.email)
         localStorage.setItem("authToken",response.data.authToken)
